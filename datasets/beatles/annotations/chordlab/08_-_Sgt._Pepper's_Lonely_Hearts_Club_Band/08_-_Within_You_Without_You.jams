@@ -1,0 +1,130 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {},
+        "version": "",
+        "corpus": "",
+        "annotation_tools": "",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": ""
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.2063,
+          "value": "N",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.2063,
+          "duration": 30.26311,
+          "value": "C#",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.46941,
+          "duration": 28.922155999999998,
+          "value": "C#",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.391566,
+          "duration": 3.7483200000000068,
+          "value": "F#/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.139886,
+          "duration": 54.785927,
+          "value": "C#",
+          "confidence": 1.0
+        },
+        {
+          "time": 118.925813,
+          "duration": 8.080292,
+          "value": "F#/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 127.006105,
+          "duration": 3.8098810000000043,
+          "value": "C#",
+          "confidence": 1.0
+        },
+        {
+          "time": 130.815986,
+          "duration": 4.748480999999998,
+          "value": "F#/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 135.564467,
+          "duration": 0.4984579999999994,
+          "value": "C#:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 136.062925,
+          "duration": 137.42240599999997,
+          "value": "C#",
+          "confidence": 1.0
+        },
+        {
+          "time": 273.485331,
+          "duration": 7.754782000000034,
+          "value": "F#/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 281.240113,
+          "duration": 3.7215419999999995,
+          "value": "C#",
+          "confidence": 1.0
+        },
+        {
+          "time": 284.961655,
+          "duration": 4.632381000000009,
+          "value": "F#/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 289.594036,
+          "duration": 0.4348309999999742,
+          "value": "C#:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 290.028867,
+          "duration": 14.437298999999996,
+          "value": "C#",
+          "confidence": 1.0
+        },
+        {
+          "time": 304.466166,
+          "duration": 0.6179160000000365,
+          "value": "N",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "",
+    "artist": "",
+    "release": "",
+    "duration": 305.084082,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {}
+}
