@@ -1,0 +1,89 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.544S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2fdb1c1cdcb8 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.544S"^^xsd:duration ;
+        tl:duration "PT2M26.503S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2fdb1c1cdcb8 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "A:minor" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT2M27.047S"^^xsd:duration ;
+        tl:duration "PT48.926S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2fdb1c1cdcb8 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Bb:minor" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT3M15.973S"^^xsd:duration ;
+        tl:duration "PT7.44S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2fdb1c1cdcb8 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "N" .
+
+:maker_bbf5022a09cd
+    a mo:MusicArtist ;
+    foaf:name "Zweieck" .
+
+:record_df52b210d145
+    dc:title "Zwielicht" ;
+    mo:release_type mo:album ;
+    mo:track :track_1ea1bdaa0d38 ;
+    a mo:Record ;
+    foaf:maker :maker_bbf5022a09cd .
+
+:timeline_2fdb1c1cdcb8
+    a tl:Timeline .
+
+:track_1ea1bdaa0d38
+    dc:title "Akne" ;
+    mo:available_as <file:Zweieck/Zwielicht/07_-_Akne.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_bbf5022a09cd .
+
+<file:Zweieck/Zwielicht/07_-_Akne.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_2fdb1c1cdcb8 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

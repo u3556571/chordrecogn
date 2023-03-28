@@ -1,0 +1,159 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_f4535e77c524
+    a mo:MusicArtist ;
+    foaf:name "Zweieck" .
+
+:record_9ea887e9cee3
+    dc:title "Zwielicht" ;
+    mo:release_type mo:album ;
+    mo:track :track_b866d838edcc ;
+    a mo:Record ;
+    foaf:maker :maker_f4535e77c524 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.522S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.522S"^^xsd:duration ;
+        tl:duration "PT12.11S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT12.632S"^^xsd:duration ;
+        tl:duration "PT9.752S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT22.384S"^^xsd:duration ;
+        tl:duration "PT9.6S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "chorus" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT31.984S"^^xsd:duration ;
+        tl:duration "PT9.755S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT41.739S"^^xsd:duration ;
+        tl:duration "PT9.722S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT51.461S"^^xsd:duration ;
+        tl:duration "PT11.421S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT1M2.882S"^^xsd:duration ;
+        tl:duration "PT12.302S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT1M15.184S"^^xsd:duration ;
+        tl:duration "PT14.726S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT1M29.91S"^^xsd:duration ;
+        tl:duration "PT8.229S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT1M38.139S"^^xsd:duration ;
+        tl:duration "PT2.514S"^^xsd:duration ;
+        tl:onTimeLine :timeline_f8efdd30a506 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_f8efdd30a506
+    a tl:Timeline .
+
+:track_b866d838edcc
+    dc:title "Santa Donna Lucia Mobile" ;
+    mo:available_as <file:Zweieck/Zwielicht/14_-_Santa_Donna_Lucia_Mobile.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_f4535e77c524 .
+
+<file:Zweieck/Zwielicht/14_-_Santa_Donna_Lucia_Mobile.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_f8efdd30a506 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

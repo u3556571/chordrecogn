@@ -1,0 +1,159 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_31fe1a56984a
+    a mo:MusicArtist ;
+    foaf:name "Zweieck" .
+
+:record_56f03f8ba271
+    dc:title "Zwielicht" ;
+    mo:release_type mo:album ;
+    mo:track :track_d83b00ae37cd ;
+    a mo:Record ;
+    foaf:maker :maker_31fe1a56984a .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.49S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.49S"^^xsd:duration ;
+        tl:duration "PT6.641S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT7.131S"^^xsd:duration ;
+        tl:duration "PT10.506S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT17.637S"^^xsd:duration ;
+        tl:duration "PT9.441S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "chorus" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT27.078S"^^xsd:duration ;
+        tl:duration "PT9.583S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT36.661S"^^xsd:duration ;
+        tl:duration "PT9.127S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "chorus" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT45.788S"^^xsd:duration ;
+        tl:duration "PT38.498S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT1M24.286S"^^xsd:duration ;
+        tl:duration "PT18.498S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT1M42.784S"^^xsd:duration ;
+        tl:duration "PT18.294S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M1.078S"^^xsd:duration ;
+        tl:duration "PT28.228S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT2M29.306S"^^xsd:duration ;
+        tl:duration "PT2.601S"^^xsd:duration ;
+        tl:onTimeLine :timeline_2199e2f74c3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_2199e2f74c3e
+    a tl:Timeline .
+
+:track_d83b00ae37cd
+    dc:title "Es Wird Alles Wieder Gut, Herr Professor" ;
+    mo:available_as <file:Zweieck/Zwielicht/15_-_Es_Wird_Alles_Wieder_Gut,_Herr_Professor.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_31fe1a56984a .
+
+<file:Zweieck/Zwielicht/15_-_Es_Wird_Alles_Wieder_Gut,_Herr_Professor.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_2199e2f74c3e ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

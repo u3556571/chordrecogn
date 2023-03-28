@@ -1,0 +1,13 @@
+0.000	0.229		silence
+0.229	22.808		intro
+22.808	34.106		verse
+34.106	50.906		chorus
+50.906	60.947		instrumental
+60.947	72.253		verse
+72.253	86.367		chorus
+86.367	111.771		bridge
+111.771	151.298		instrumental
+151.298	168.049		bridge_2
+168.049	192.229		bridge
+192.229	208.490		outro
+208.490	210.747		silence

@@ -1,0 +1,119 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.629S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dbcf62307610 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.629S"^^xsd:duration ;
+        tl:duration "PT1M14.154S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dbcf62307610 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "D:minor" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT1M14.783S"^^xsd:duration ;
+        tl:duration "PT23.546S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dbcf62307610 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F#:minor" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT1M38.329S"^^xsd:duration ;
+        tl:duration "PT34.938S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dbcf62307610 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "D:minor" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT2M13.267S"^^xsd:duration ;
+        tl:duration "PT23.947S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dbcf62307610 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F#:minor" .
+
+:key_000006
+    event:time [
+        tl:beginsAt "PT2M37.214S"^^xsd:duration ;
+        tl:duration "PT12.169S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dbcf62307610 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "D:minor" .
+
+:key_000007
+    event:time [
+        tl:beginsAt "PT2M49.383S"^^xsd:duration ;
+        tl:duration "PT2.417S"^^xsd:duration ;
+        tl:onTimeLine :timeline_dbcf62307610 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_a78e94ecca9e
+    a mo:MusicArtist ;
+    foaf:name "Zweieck" .
+
+:record_f6264201f964
+    dc:title "Zwielicht" ;
+    mo:release_type mo:album ;
+    mo:track :track_44952bc96dfa ;
+    a mo:Record ;
+    foaf:maker :maker_a78e94ecca9e .
+
+:timeline_dbcf62307610
+    a tl:Timeline .
+
+:track_44952bc96dfa
+    dc:title "Blass" ;
+    mo:available_as <file:Zweieck/Zwielicht/08_-_Blass.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_a78e94ecca9e .
+
+<file:Zweieck/Zwielicht/08_-_Blass.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_dbcf62307610 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

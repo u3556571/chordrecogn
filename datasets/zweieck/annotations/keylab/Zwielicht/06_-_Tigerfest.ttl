@@ -1,0 +1,189 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.639S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.639S"^^xsd:duration ;
+        tl:duration "PT37.407S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "A" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT38.046S"^^xsd:duration ;
+        tl:duration "PT12.112S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT50.158S"^^xsd:duration ;
+        tl:duration "PT23.679S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "A" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT1M13.837S"^^xsd:duration ;
+        tl:duration "PT12.251S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E" .
+
+:key_000006
+    event:time [
+        tl:beginsAt "PT1M26.088S"^^xsd:duration ;
+        tl:duration "PT15.52S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "C" .
+
+:key_000007
+    event:time [
+        tl:beginsAt "PT1M41.608S"^^xsd:duration ;
+        tl:duration "PT9.544S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E" .
+
+:key_000008
+    event:time [
+        tl:beginsAt "PT1M51.152S"^^xsd:duration ;
+        tl:duration "PT15.188S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "C" .
+
+:key_000009
+    event:time [
+        tl:beginsAt "PT2M6.34S"^^xsd:duration ;
+        tl:duration "PT9.723S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E" .
+
+:key_000010
+    event:time [
+        tl:beginsAt "PT2M16.063S"^^xsd:duration ;
+        tl:duration "PT15.915S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "C" .
+
+:key_000011
+    event:time [
+        tl:beginsAt "PT2M31.978S"^^xsd:duration ;
+        tl:duration "PT10.016S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E" .
+
+:key_000012
+    event:time [
+        tl:beginsAt "PT2M41.994S"^^xsd:duration ;
+        tl:duration "PT25.886S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "A" .
+
+:key_000013
+    event:time [
+        tl:beginsAt "PT3M7.88S"^^xsd:duration ;
+        tl:duration "PT12.893S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E" .
+
+:key_000014
+    event:time [
+        tl:beginsAt "PT3M20.773S"^^xsd:duration ;
+        tl:duration "PT2.32S"^^xsd:duration ;
+        tl:onTimeLine :timeline_613c0528113d ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_bc2e9610fb6b
+    a mo:MusicArtist ;
+    foaf:name "Zweieck" .
+
+:record_6b2cbd3bdd2e
+    dc:title "Zwielicht" ;
+    mo:release_type mo:album ;
+    mo:track :track_7d73089ef978 ;
+    a mo:Record ;
+    foaf:maker :maker_bc2e9610fb6b .
+
+:timeline_613c0528113d
+    a tl:Timeline .
+
+:track_7d73089ef978
+    dc:title "Tigerfest" ;
+    mo:available_as <file:Zweieck/Zwielicht/06_-_Tigerfest.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_bc2e9610fb6b .
+
+<file:Zweieck/Zwielicht/06_-_Tigerfest.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_613c0528113d ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

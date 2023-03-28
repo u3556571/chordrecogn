@@ -1,0 +1,209 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_4188357f4df7
+    a mo:MusicArtist ;
+    foaf:name "Zweieck" .
+
+:record_0c95aa0e0f31
+    dc:title "Zwielicht" ;
+    mo:release_type mo:album ;
+    mo:track :track_60151b3b260b ;
+    a mo:Record ;
+    foaf:maker :maker_4188357f4df7 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.437S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.437S"^^xsd:duration ;
+        tl:duration "PT28.436S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT28.873S"^^xsd:duration ;
+        tl:duration "PT19.217S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT48.09S"^^xsd:duration ;
+        tl:duration "PT19.228S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "chorus" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M7.318S"^^xsd:duration ;
+        tl:duration "PT19.164S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M26.482S"^^xsd:duration ;
+        tl:duration "PT19.175S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "chorus" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M45.657S"^^xsd:duration ;
+        tl:duration "PT21.657S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT2M7.314S"^^xsd:duration ;
+        tl:duration "PT9.568S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT2M16.882S"^^xsd:duration ;
+        tl:duration "PT9.604S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M26.486S"^^xsd:duration ;
+        tl:duration "PT4.763S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "chorus" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT2M31.249S"^^xsd:duration ;
+        tl:duration "PT14.408S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental" .
+
+:segment_000012
+    event:time [
+        tl:beginsAt "PT2M45.657S"^^xsd:duration ;
+        tl:duration "PT16.829S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "chorus" .
+
+:segment_000013
+    event:time [
+        tl:beginsAt "PT3M2.486S"^^xsd:duration ;
+        tl:duration "PT21.612S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental" .
+
+:segment_000014
+    event:time [
+        tl:beginsAt "PT3M24.098S"^^xsd:duration ;
+        tl:duration "PT16.886S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "chorus" .
+
+:segment_000015
+    event:time [
+        tl:beginsAt "PT3M40.984S"^^xsd:duration ;
+        tl:duration "PT9.869S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000016
+    event:time [
+        tl:beginsAt "PT3M50.853S"^^xsd:duration ;
+        tl:duration "PT3.614S"^^xsd:duration ;
+        tl:onTimeLine :timeline_399c09d03f39 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_399c09d03f39
+    a tl:Timeline .
+
+:track_60151b3b260b
+    dc:title "Paparazzi" ;
+    mo:available_as <file:Zweieck/Zwielicht/13_-_Paparazzi.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_4188357f4df7 .
+
+<file:Zweieck/Zwielicht/13_-_Paparazzi.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_399c09d03f39 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+
